@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 200vh;
+    background-color: #00376a;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    background-color: aqua;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER  */
+
+header .container{
+    justify-content: space-between;
+    height: 60px;
+    background-color: #00376a;
+}
+
+
+
+header .container .nav-header a.btn{
+    display: inline-block;
+    background-color: rgb(61, 177, 102);
+    color: white;
+    font-weight: bold;
+    padding: 0 5px;
+    height: 60px;
+    line-height: 60px;
+    width:120px ;
+    text-align: center ;
+    text-transform: uppercase;
+}
+
+header .container .nav-header{
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 13px;
+    color: grey;
+}
+
+/* STICKY NAV  */
+
+nav{
+    position: sticky;
+    top: 0;
+    
+}
+
+nav .container {
+    justify-content: space-between;
+    height: 91px;
+    background-color: white;
+    width: 1520px;
+}
+
+nav .container ul.sticky-nav li.item  {
+    display: inline-block;
+    list-style: none;
+    font-size: 13px;
+    margin-left: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* SECTION HERO  */
+
+section.hero{
+    height: calc(100vh - 60px - 91px);
+    background-color: yellowgreen;
+    background-image: url(assets/Web-Banner-BATTLE-OF-MINDS-01-Universitas-Prasetiya-Mulya.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+section.hero .container1{
+    background-color: rgb(255, 255, 255);
+}
+
+/* COLUMN */
+
+.column{
+    display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #efefef;
+  padding: 10px;
+  gap: 5px;
+   
+}
+.column > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    background-image: url(assets/Gedung-Universitas-Prasetiya-Mulya-crop.jpg);
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    height:250px;
+    background-size: auto;
+}
+.column > div > .logo{
+   background-image: url(assets/Logo-Prasmul-Graduate-1.png);
+    background-color: #00376a;
+    display: block;
+    align-items: center;
+    height: 140px;
+    margin: 30px ;
+    border: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
